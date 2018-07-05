@@ -1,0 +1,30 @@
+/**
+* Fade In
+*/
+@mixin fade-in() {
+  animation: fade-in $base-duration $base-timing;
+}
+
+// KEYFRAMES
+
+@keyframes pop-in {
+  to {
+    visibility: visible;
+  }
+}
+
+@keyframes pop-out {
+  to {
+    visibility: hidden;
+  }
+}
+
+// Opacity Fade In
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

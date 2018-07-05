@@ -1,0 +1,44 @@
+.earthart-container {
+  text-align: center;
+  padding: 30px 0;
+
+  @include mq($bp-tablet) {
+    padding: 50px 0;
+  }
+
+  h1 {
+    margin-bottom: 34px;
+
+    @include mq($bp-tablet) {
+      margin-bottom: 54px;
+    }
+
+  }
+
+  p {
+    font-style: italic;
+    color: $japonica;
+    text-transform: lowercase;
+    @include font(20, 20);
+
+    @include mq($bp-tablet) {
+      @include font(24, 24);
+    }
+  }
+
+  .image {
+    width: 120px;
+    height: auto;
+    margin: 50px auto 0;
+
+    @include mq($bp-tablet) {
+      width: 180px;
+      margin-top: 75px;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+}//.earthartcontainer

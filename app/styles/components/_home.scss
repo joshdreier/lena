@@ -1,0 +1,108 @@
+.home-container {
+  text-align: center;
+  padding: 30px 0;
+
+  @include mq($bp-tablet) {
+    padding: 50px 0;
+  }
+
+  h1 {
+    @include font(20, 20);
+    color: $japonica;
+    text-transform: uppercase;
+    margin: 28px 0 64px;
+
+    @include mq($bp-tablet) {
+      @include font(24, 24);
+      margin-bottom: 94px;
+    }
+
+  }
+
+  nav {
+
+    > ul {
+
+      &.top-links {
+        margin-bottom: 32px;
+
+        @include mq($bp-tablet) {
+          margin-bottom: 72px;
+        }
+
+      }
+
+      &.bottom-links {
+        position: absolute;
+        @include centered($horizontal: true, $vertical: false);
+        width: 100%;
+      }
+
+      > li {
+        margin: 28px 0;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        > button {
+          @include remove-button-styles;
+          color: $japonica;
+        }
+
+        > a,
+        button {
+          @include font(20, 20);
+          text-transform: uppercase;
+
+          @include mq($bp-tablet) {
+            @include font(24, 24);
+          }
+
+        }
+
+      }// >li
+
+    }// > ul
+
+    .submenu {
+      margin: 12px 0 15px;
+
+      .js & {
+        display: none;
+      }
+
+      > li {
+        margin-bottom: 6px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        > a {
+          color: $russet;
+          @include font(16, 16);
+
+          @include mq($bp-tablet) {
+            @include font(18, 18);
+          }
+
+        }
+
+      }
+
+    }
+
+  }// nav
+
+  .spacer {
+    display: none;
+
+    @include mq($bp-tablet) {
+      display: block;
+      height: 188px;
+    }
+
+  }
+
+}//.home
